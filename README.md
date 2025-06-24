@@ -28,7 +28,7 @@ Things to do:
 
 ---
 
-## 🎮 Product to Build - 1v1 Betting Game
+## 🎮 Product to Build - RPC Arena (Rock, Paper, Scissors)
 
 You will build a **simple one-on-one rock-paper-scissors betting platform** with the following features:
 
