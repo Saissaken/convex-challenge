@@ -36,6 +36,7 @@ Demo: https://kzmoewldy7zk83e8zaz3.lite.vusercontent.net/
 v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 
 ### 1. Authentication
+- Use [Convex Auth](https://docs.convex.dev/auth/convex-auth)
 - Unauthenticated users can view all battles.
 - To participate, users must sign up or log in (nickname + password).
 - Login should happen via a **modal**, not a separate page.
