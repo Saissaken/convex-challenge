@@ -9,7 +9,7 @@ Things to do:
 - Create a project from scratch with Next.js + Convex.
 - Define Convex schemas and migrate the database between versions (Migrations component).
 - Read and write data in Convex (`useQuery`, `useMutation`).
-- Validate function inputs and schemas, infer types.
+- [Validate function inputs](https://docs.convex.dev/functions/validation) and schemas, [infer types](https://docs.convex.dev/functions/validation#extracting-typescript-types).
 - Handle internal vs. user-facing errors.
 - Use Internal Functions for reusable logic.
 - Use **Actions** to call external services.
@@ -64,7 +64,7 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 
 ### 4. Battle Resolution
 - Once both players have submitted their move, the result is revealed.
-- Use Convex scheduler to calculate the winner 5 seconds after both bets are placed.
+- Use [Convex scheduler](https://docs.convex.dev/scheduling/scheduled-functions) to calculate the winner 3 seconds after both bets are placed (show a countdown animation in the meantime).
 - Store the winner user ID in the battle entity.
 - The winner takes all the tokens.
 - Everything updates in real-time and is visible to everyone.
@@ -73,7 +73,7 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 - The entire app lives in a single view.
 - Add a **basic chat** on the side (or wherever you choose); only signed-in users can send messages.
   - Load only the last 50 chat messages.
-  - Auto-delete all other chat messages daily via a cron job.
+  - Auto-delete all other chat messages daily via a [cron job](https://docs.convex.dev/scheduling/cron-jobs).
 - Show all open battles live at the top.
 - Show the last 10 finished battles below.
 - Include some metrics at the top:
