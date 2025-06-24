@@ -44,6 +44,9 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 ### 2. Daily Token Claim
 - Logged-in users can **claim 100 tokens per day** (once per day).
 - Tokens are used for betting.
+- Use a ledger-like system for token transactions and aggregate the result to calculate the current balance.
+  - Table with incoming and outgoing transactions
+  - Try [Convex aggregate component](https://www.convex.dev/components/aggregate) for calculating the balance, per user.
 
 ### 3. Create Battles
 - A user can create a public battle:
@@ -76,6 +79,7 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 - Include some metrics at the top:
   - Total battles played.
   - Total coins rewarded.
+  - Use [Convex aggregate component](https://www.convex.dev/components/aggregate)
 - Each user can see a list of their last 5 battles.
 
 -----
@@ -90,5 +94,5 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 - Add a leaderboard with the top 5 players based on wins:
   - Make sure battles and users exist first.
   - Create the leaderboard schema afterward, without resetting the DB.
-  - This will help you learn how to run a migration.
+  - This will help you learn how to run a [migration](https://www.convex.dev/components/migrations).
   - The migration should also show how to backfill missing data for older entities (like an aggregate).
