@@ -18,7 +18,7 @@ Things to do:
 - Do SSR with hydration + client-side reactivity using `preloadQuery`.
 - Set up and run Cron Jobs.
 - Implement a component from Convex's official library (Aggregate).
-- Deploy to Vercel + Convex Cloud (free tier).
+- Deploy to Vercel + Convex Cloud (free tier) ([convex referral link for 100% more cheff tokens + other benefits](https://convex.dev/referral/JUANSA9844)).
 - Configure and share the GitHub repo with the team.
 
 ### ✅ Final Deliverables
@@ -82,6 +82,7 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 
 ### Extra Tech Notes
 
+- Use convex rules for cursor/copilot https://docs.convex.dev/ai/using-cursor
 - Find a use case for using an Internal Function (as a replacement for services).
 - Implement error handling and use `ConvexError` when a user tries to use an already taken nickname.
   - Also handle unexpected Giphy errors (as opposed to genuine app errors like duplicate nickname).
