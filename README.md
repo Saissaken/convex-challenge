@@ -86,12 +86,12 @@ v0: https://v0.dev/chat/1v1-betting-game-7LHMSdwWOxu
 
 ### Extra Tech Notes
 
-- Use convex rules for cursor/copilot https://docs.convex.dev/ai/using-cursor
-- Find a use case for using an Internal Function (as a replacement for services).
-- [Implement error handling and use `ConvexError` when a user tries to use an already taken nickname.](https://docs.convex.dev/functions/error-handling/application-errors)
+- Use [convex rules](https://docs.convex.dev/ai/using-cursor) for cursor/copilot
+- Find a use case for using an [Internal Function](https://docs.convex.dev/functions/internal-functions) (as a replacement for services).
+- Implement error handling and use [`ConvexError`](https://docs.convex.dev/functions/error-handling/application-errors) when a user tries to use an already taken nickname.
   - Also handle unexpected Giphy errors (as opposed to genuine app errors like duplicate nickname).
 - [Use `preloadQuery` for SSR](https://docs.convex.dev/client/react/nextjs/server-rendering)
-- Try using: https://www.npmjs.com/package/convex-helpers
+- Try using: [convex-helpers](https://www.npmjs.com/package/convex-helpers)
 - Add a leaderboard with the top 5 players based on wins:
   - Make sure battles and users exist first.
   - Create the leaderboard schema afterward, without resetting the DB.
