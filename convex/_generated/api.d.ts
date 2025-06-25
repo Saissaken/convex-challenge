@@ -13,7 +13,9 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
-import type * as numbers from "../numbers.js";
+import type * as auth from "../auth.js";
+import type * as chat from "../chat.js";
+import type * as http from "../http.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -24,7 +26,9 @@ import type * as numbers from "../numbers.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
-  numbers: typeof numbers;
+  auth: typeof auth;
+  chat: typeof chat;
+  http: typeof http;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,
