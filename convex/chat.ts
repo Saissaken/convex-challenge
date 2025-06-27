@@ -39,7 +39,7 @@ export const getRecentMessages = query({
         if (!user) throw new ConvexError("User not found");
         return {
           ...message,
-          from: user.name,
+          from: user.nickname,
         };
       })
     );

@@ -8,11 +8,14 @@
     "dev:convex": "convex dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
+    "@convex-dev/aggregate": "^0.1.21",
     "@convex-dev/auth": "^0.0.87",
     "convex": "^1.25.0",
+    "convex-helpers": "^0.1.95",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
